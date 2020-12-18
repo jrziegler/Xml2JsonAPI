@@ -1,5 +1,5 @@
 import express from "express";
-import Main from "../controllers/Main/Main";
+import File from "../controllers/File/file.controller";
 
 export const MainRoutes = express.Router();
-MainRoutes.get("/", Main.index);
+MainRoutes.get("/", File.index);
